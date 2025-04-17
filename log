@@ -14,3 +14,15 @@ test.c:8:8: error: '_strdup' redeclared without dllimport attribute: previous dl
       |        ^~~~~~~
 cc1.exe: all warnings being treated as errors
 00a2364
+Thu, Apr 17, 2025  3:25:43 AM: 
+ hashmap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+Compilation failed
+In file included from test.c:4:
+hashmap.c:15:5: error: redefinition of 'enlarge_called'
+   15 | int enlarge_called=0;
+      |     ^~~~~~~~~~~~~~
+hashmap.c:11:5: note: previous definition of 'enlarge_called' was here
+   11 | int enlarge_called = 0;
+      |     ^~~~~~~~~~~~~~
+b30afc7

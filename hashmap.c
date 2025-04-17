@@ -5,6 +5,11 @@
 #include <ctype.h>
 #include "hashmap.h"
 
+#define _strdup strdup
+
+typedef struct HashMap HashMap;
+int enlarge_called = 0;
+
 
 typedef struct HashMap HashMap;
 int enlarge_called=0;
