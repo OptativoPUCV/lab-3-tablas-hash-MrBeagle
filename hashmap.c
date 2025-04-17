@@ -10,10 +10,6 @@
 typedef struct HashMap HashMap;
 int enlarge_called = 0;
 
-
-typedef struct HashMap HashMap;
-int enlarge_called=0;
-
 struct HashMap {
     Pair ** buckets;
     long size; //cantidad de datos/pairs en la tabla
